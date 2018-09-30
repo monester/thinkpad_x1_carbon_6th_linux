@@ -1,7 +1,7 @@
 # Linux configuration guide for Thinkpad x1 Carbon 6th Gen (2018)
 
 This guide workable for Lenovo ThinkPad Ultrabook X1 Carbon Gen6 (20KH006HRT) and Ubuntu 18.04.
-After these steps, laptop works around 8-10 hourse on medium load.
+After these steps, laptop works around 8-10 hours on medium load.
 
 If you follow this guide, no one is responsible for any damage to your hardware or any other kind of harming your machine.
 
@@ -57,6 +57,9 @@ $ sudo apt-get install xserver-xorg-input-synaptics
 
 ## Deep sleep
 
+Fixed in Firmware 1.30 https://twitter.com/hdevalence/status/1038305566517415936
+
+~~
 1. Reboot, enter your BIOS/UEFI. Go to Config - Thunderbolt (TM) 3 - set Thunerbolt BIOS Assist Mode to Enabled. It has also been reported that Security - Secure Boot must be disabled.
 
 2. Install iasl (Intel's compiler/decompiler for ACPI machine language) and cpio from your distribution.
@@ -135,6 +138,7 @@ In most setups, simply closing the lid will probably trigger deep sleep. If you'
 $ systemctl suspend -i
 ```
 Once again, many thanks to Ranguvar for the great collaboration on the Arch forums, and to fiji-flo for managing to hack the first fully working patch. Also, to whomever wrote the article on DSDT patching in the glorious Arch Wiki. And the entire Arch community in general, you're wonderful.
+~~
 
 ## low cTDP and trip temperature in Linux
 
