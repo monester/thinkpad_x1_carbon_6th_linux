@@ -59,7 +59,7 @@ $ sudo apt-get install xserver-xorg-input-synaptics
 
 Fixed in Firmware 1.30 https://twitter.com/hdevalence/status/1038305566517415936
 
-~~
+~~not needed
 1. Reboot, enter your BIOS/UEFI. Go to Config - Thunderbolt (TM) 3 - set Thunerbolt BIOS Assist Mode to Enabled. It has also been reported that Security - Secure Boot must be disabled.
 
 2. Install iasl (Intel's compiler/decompiler for ACPI machine language) and cpio from your distribution.
